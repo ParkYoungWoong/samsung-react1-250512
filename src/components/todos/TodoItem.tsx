@@ -48,12 +48,13 @@ export default function TodoItem({ todo }: { todo: Todo }) {
             onKeyDown={handleKeyDown}
           />
           <Button
-            onClick={() =>
+            onClick={() => {
               updateTodo({
                 ...todo,
                 title
               })
-            }>
+              setIsEditMode(false)
+            }}>
             저장
           </Button>
           <Button

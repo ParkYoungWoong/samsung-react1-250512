@@ -6,8 +6,8 @@ export default function Modal({ children }: { children: React.ReactNode }) {
     <div className="fixed top-0 left-0 flex h-[100vh] w-[100vw] items-center justify-center">
       <div
         className="absolute top-0 left-0 h-full w-full bg-black/70"
-        onClick={() => navigate(-1)}></div>
-      <div className="relative max-h-[90%] min-h-[100px] w-[600px] overflow-y-auto rounded-md bg-white">
+        onClick={() => navigate('/movies')}></div>
+      <div className="relative h-[90%] max-h-[90%] w-[600px] overflow-y-auto rounded-md bg-white">
         {children}
       </div>
     </div>

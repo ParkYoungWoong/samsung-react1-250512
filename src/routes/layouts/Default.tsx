@@ -23,3 +23,5 @@ export default function Default() {
     </>
   )
 }
+
+// http://localhost:5173/movies/tt1877830?s=avengers
