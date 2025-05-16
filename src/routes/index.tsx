@@ -21,11 +21,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/movies',
-        element: <Movies />
-      },
-      {
-        path: '/movies/:movieId', // /movies/tt1234567
-        element: <MovieDetails />
+        element: <Movies />,
+        children: [
+          {
+            path: ':movieId', // /movies/tt1234567
+            element: <MovieDetails />
+          }
+        ]
       }
     ]
   },
